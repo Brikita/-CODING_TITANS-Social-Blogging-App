@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: whitesmoke;
+    border-bottom: 2px solid #45a29e;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+nav ul {
+    list-style-type: none;
+    display:flex;
+}
+
+nav ul li {
+flex: 0.2;
+text align-items: center;
+}
+
+.container {
+    margin: 50px;
+    /*border: 2px solid #45a29e;*/
+    display: flex;
+}
+main{
+
+}
+.blog-content{
+border: 2px solid #45a29e;
+border-radius: 10px;
+
+}
+
+a:any-link {
+color: #1f2833;
+text-decoration: none;
+}
+
+a:hover {
+opacity: 90%;
+}
+
