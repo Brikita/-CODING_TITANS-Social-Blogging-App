@@ -10,6 +10,9 @@ header{
     border-radius: 20px;
     padding-top: 20px;
     padding-left: 20px;
+   /* display: flex;
+    align-items:center ;
+    justify-content: space-between;*/
 }
 nav ul {
     list-style-type: none;
@@ -42,5 +45,35 @@ text-decoration: none;
 
 a:hover {
 opacity: 90%;
+}
+.art-head{
+    padding-left: 10px;
+}
+
+.blog-text{
+    padding: 10px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    max-width: 40em;
+}
+figure{
+    display: block;
+    width: 70%;
+}
+.nav-button {
+    margin-right: 15px;
+    background-color: #378581;
+    padding: 8px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+footer{
+    font-weight: bolder;
+    text-align: center;
+}
+.footer-legal {
+    font-weight: 100;
+    text-align: right;
 }
 

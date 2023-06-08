@@ -11,16 +11,16 @@
 </head>
 <body>
     <header>
-       <!--blog app name--> <h1>XXXXXX</h1>
+       <!--blog app name--> <h1>S BLOG APP</h1>
        <div class="searchbar">
         <button id="search-button">search</button>
         <input type="text" name="search-input" id="search-input" placeholder="search blog">
        </div>
         <nav>
             <ul>
-                <li><a href="#">log out</a></li>
-                <li><a href="#">Direct Message</a></li>
-                <li><a href="#">My Profile</a></li>
+               <button class="nav-button" > <li><a href="#">My Profile</a></li> </button>
+               <button class="nav-button"><li><a href="#">Direct Message</a></li></button>
+               <button class="nav-button"> <li><a href="#">log out</a></li></button>
             </ul>
         </nav>
     </header>
@@ -29,16 +29,25 @@
             <div class="blog">
                 <section aria-label="article-area" class="blog-content">
                 <div class="blog pic">
+                    <div class="art-head"><h2>Article Heading </h2></div>
                 <figure>
                     <img src="/-CODING_TITANS-Social-Blogging-App/Assets/download.jpeg" alt="Article photo">
                 </figure>
-                <hr>
-              <p>
+                
+              <p class="blog-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae repellendus natus at similique. Quidem ea, mollitia porro delectus iusto quasi facere illum sunt quisquam dignissimos odit ipsam officia nobis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit expedita perspiciatis iure facilis eaque consectetur sed reiciendis explicabo eos architecto maxime laborum optio molestiae velit, rem doloribus id inventore tempora.
               </p>
             </div>
         </section>
         <section class="reaction">
+            <div class="likes">
+                <h3>Likes</h3>
+                <button class="like-button">Like</button>
+                <span id="like-count">0</span>
+
+            </div>
+
             <div class="commenting">
                 <h2>comments</h2>
                 <form id="comment-form">
@@ -47,19 +56,14 @@
                     "></button>
                 </form>
 
-                <ul id="comment-list">
+                <ul id="comment-list"  >
                     <li>Nice. really inspiring</li>
                     <li>comment</li>
                     <li>comment</li>
                     <li>comment</li>
                 </ul>
             </div>
-            <div class="likes">
-                <h3>Likes</h3>
-                <button class="like-button">Like</button>
-                <span id="like-count">0</span>
-
-            </div>
+           
 
         </section>
 
@@ -68,7 +72,7 @@
     </div>
     <footer class="footer">
         <div>
-        <span>XXXXXXXX</span>
+        <span>Social Blogging App</span>
     </div> 
     <div class="footer-legal">Copyright &copy; 2023</p> </div> 
 
