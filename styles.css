@@ -21,7 +21,7 @@ nav ul {
 
 nav ul li {
 flex: 0.2;
-text align-items: center;
+ align-items: center;
 }
 
 .container {
@@ -29,9 +29,7 @@ text align-items: center;
     /*border: 2px solid #45a29e;*/
     display: flex;
 }
-main{
 
-}
 .blog-content{
 border: 2px solid #45a29e;
 border-radius: 10px;
@@ -46,6 +44,7 @@ text-decoration: none;
 a:hover {
 opacity: 90%;
 }
+/*Article heading*/
 .art-head{
     padding-left: 10px;
 }
@@ -66,6 +65,7 @@ figure{
     padding: 8px;
     border-radius: 25px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 footer{
@@ -77,3 +77,39 @@ footer{
     text-align: right;
 }
 
+ul {
+    list-style-type: none;
+}
+#like-button {
+    font-weight: bold;
+    padding: 3px;
+}
+#like-count {
+    font-weight: bold;
+}
+
+.comment-button{
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media screen and (min-width: 576px) {
+    
+        header{
+            background-color: whitesmoke;
+            border-bottom: 2px solid #45a29e;
+            border-radius: 20px;
+            padding-top: 20px;
+            padding-left: 20px;
+            display: flex;
+            align-items:center ;
+            justify-content: space-evenly;
+            gap: 8px;
+    }
+    
+}
