@@ -8,37 +8,36 @@
     <title>Blog</title>
 </head>
 <body>
-    <section>
-        <div class="welcome">
-            <h2 class="font">Welcome to</h2>
-            <h1 class="font" id="main-font">My Blog</h1>
-        </div> 
-        <div>
-            <form class="login-section">
-                <fieldset>
-                    <h2 class="login-text">Login</h2>
-                    <div class="login">
-                        <div>
-                            <label for="email">Email: </label>
-                            <input type="email" name="email" id="email" placeholder="E.g john123@gmail.com">
-                        </div>
-                        <div>
-                            <label for="password">Password: </label>
-                            <input type="password" name="password" id="password" placeholder="********">
-                        </div>
-                    </div>
-                    <div class="buttons">
-                        <a href="index.html" class="login-btn">
-                            Login
-                        </a> 
-                        <a href="index.html" class="login-btn">
-                            Sign up
-                        </a> 
-                    </div>
-                </fieldset>
-            </form>
-        </div>
-    </section>
-    
+    <div class="welcome">
+        <h2 class="font">Welcome to</h2>
+        <h1 class="font" id="main-font">My Blog</h1>
+    </div> 
+    <div>        
+        <form class="login-section">
+            <h2 class="login-text">Login</h2>
+            <div class="login">
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="E.g john123@gmail.com">
+                </div>
+                <div>
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password" placeholder="********">
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="login-btn" id="login" type="button">
+                    Login
+                </button>
+                <button class="login-btn" id="signup" type="button">
+                    Sign up
+                </button>
+            </div>
+            <p id="error-message">
+
+            </p>                
+        </form>
+    </div>  
+    <script src="login.js"></script>
 </body>
 </html>

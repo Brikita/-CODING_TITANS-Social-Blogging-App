@@ -5,7 +5,7 @@
     color:  rgb(49, 49, 49);;
 }
 
-section {
+body {
     margin: 3rem 1rem;
     min-height: 94vh;
     align-items: start;
@@ -29,8 +29,8 @@ section {
     white-space: nowrap;
 }
 
-@media only screen and (min-width: 768px) {
-    section {
+@media screen and (min-width: 768px) {
+    body {
         margin: 0 2rem;
         min-height: 100vh;
         display: grid;
@@ -57,7 +57,7 @@ section {
     }
 }
 
-fieldset {
+.login-section {
    /*  min-height: 50vh; */
     padding: 2rem;
     border: 2px solid rgb(58, 58, 58);
@@ -92,9 +92,22 @@ input{
     border: none;
     border-radius: 0.3rem;
     text-decoration: none;
+    transition-duration: 0.8s;
 }
 .buttons {
     display: flex;
     flex-direction: row;
 }
 
+button {
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: blue;
+}
+
+#error-message {
+    padding-top: 1rem;
+    color: red;
+}
