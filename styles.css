@@ -14,9 +14,6 @@ header{
     align-items:center ;
     justify-content: space-between;*/
 }
-input, button {
-    font:inherit;
-}
 nav ul {
     list-style-type: none;
     display:flex;
@@ -105,7 +102,7 @@ footer{
 }
 .footer-legal {
     font-weight: 100;
-    text-align: right;
+    text-align: right; 
 }
 
 ul {
@@ -138,7 +135,7 @@ h3 {
 .reaction {
     background-color: white;
     padding:4px;
-    color:blanchedalmond;
+    color:grey;
     display:grid;
     grid-template-columns: 1fr 1fr;
     border:none;
@@ -211,3 +208,4 @@ a:any-link {
 }
     
 }
+

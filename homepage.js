@@ -28,7 +28,6 @@ const commentInput = document.getElementById("comment-input")
 /*commentForm.addEventListener("submit", function(event){
 event.preventDefault();
 let comment = commentInput.value;
-
 }
 )*/
 let comments = []
@@ -49,6 +48,7 @@ commentList.innerHTML = comm
 let li = document.createElement('li')
 li.textContent = comments[i]
 commentList.append(li)
+
 
 
 
