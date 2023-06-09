@@ -20,10 +20,10 @@ likeCount.textContent = likes;
 //comments functionality
 const commentList = document.getElementById("comment-list")
 const commentBtn = document.getElementById("comment-btn")
-//const commentForm = document.getElementById("comment-form")
+const commentForm = document.getElementById("comment-form")
 const commentInput = document.getElementById("comment-input")
 
-let comments = []
+
 
 /*commentForm.addEventListener("submit", function(event){
 event.preventDefault();
@@ -31,6 +31,8 @@ let comment = commentInput.value;
 
 }
 )*/
+let comments = []
+
 commentButton.addEventListener("click", function(){
     comments.push(commentInput.value)
     commentInput.value = " "
