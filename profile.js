@@ -1,14 +1,13 @@
-
-
-console.log(userDetails)
-
 // username on profile page ****
-const userName = document.getElementById("user-name")
-userName.textContent = username.value
+const appUsername = document.getElementById("user-name")
+appUsername.textContent = userName.value
 
 // name and profile pic
 const savedName = document.getElementById("saved-name")
 const yourName = document.getElementById("your-name")
+let profilePhoto = document.getElementById("profile-photo")
 
-
+function changeProfilePic() {
+    profilePhoto.src = ""
+}
 

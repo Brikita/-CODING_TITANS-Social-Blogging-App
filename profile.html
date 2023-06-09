@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1 id="user-name">Your Profile</h1>
+        <h1 id="app-username">Your Profile</h1>
         <nav aria-label="page-navigation" id="page-nav">
             <a href="">Home</a>
             <a href="">Search</a>
@@ -19,10 +19,14 @@
     
     <main>
         <div class="identification">
-            <h2 id=""></h2>
+            <h2 id="appName"></h2>
             
-            <p id="profilePhoto">photo</p>
-        
+            
+            <figure id="container">
+                <img id="profile-photo" src="scenic-2200x1331.png" alt="Your profile picture">
+                <figcaption><button id="picture-btn" onclick="changeProfilePic()">Set Profile Pic</button></figcaption>
+            </figure>
+            
 
             <nav aria-label="blogs-and-friends" id="blogs-friends">
                 <a href="#Blogs">Blogs</a>

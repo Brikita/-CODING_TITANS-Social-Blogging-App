@@ -21,24 +21,28 @@
         <form action="">
             <div>
                 <label for="name">Name:</label>
-                <input type="text" id="name" placeholder="your name">
+                    <p id="unlabelled"></p>
+                <input type="text" id="name" placeholder="your name" required autofocus>
                 <label for="username">Username:</label>
-                <input type="text" id="user-name" placeholder="your name">
+                <input type="text" id="user-name" placeholder="your name" required>
                 <label for="username">Bio:</label>
-                <textarea name="bio" id="userBio" cols="30" rows="10" placeholder="type here"></textarea>
+                <textarea name="bio" id="userBio" cols="30" rows="10" placeholder="type here" required></textarea>
                 <label for="username">Gender:</label>
-                <select name="sex" id="gender">
-                    <option value="male">Male</option>
-                    <option value="male">Female</option>
-                    <option value="male">Other</option>                   
+                <input type="text" name="sex" id="gender" list="gender-list">
+                    <datalist id="gender-list">
+                        <option value="male">
+                        <option value="Female">
+                        <option value="Other">
+                    </datalist>
+                                       
                 </select>
             </div>
 
         </form>
 
-        <button id="save-edit">SAVE</button>
+        <button type="submit" id="save-edit">SAVE</button>
     </main>
 
-    <script src="profile.js"></script>
+    <script src="edit.js"></script>
 </body>
 </html>
