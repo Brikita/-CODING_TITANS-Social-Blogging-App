@@ -14,23 +14,24 @@
     </div> 
     <div>        
         <form class="login-section">
-            <h2 class="login-text">Login</h2>
+            <h2 class="login-text">Sign up</h2>
             <div class="login">
+                <div>
+                    <label for="name">Name: </label>
+                    <input type="name" name="name" id="name" placeholder="E.g John Doe">
+                </div>
                 <div>
                     <label for="email">Email: </label>
                     <input type="email" name="email" id="email" placeholder="E.g john123@gmail.com">
                 </div>
                 <div>
-                    <label for="password">Password: </label>
+                    <label for="password">Create password: </label>
                     <input type="password" name="password" id="password" placeholder="********">
                 </div>
             </div>
             <div class="buttons">
-                <button class="login-btn" id="login" type="button">
-                    Login
-                </button>
-                <button class="login-btn" onclick="openSignup()">
-                    Sign up
+                <button class="login-btn" onclick="openIndex()" type="button">
+                    Sign Up
                 </button>
             </div>
             <p id="error-message">
