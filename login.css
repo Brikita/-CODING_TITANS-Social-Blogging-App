@@ -68,6 +68,15 @@ label {
     font-size: larger;
 }
 
+.text {
+    font-size: larger;
+}
+
+.text a{
+    text-decoration: none;
+    color: blue;
+}
+
 input{
     margin: 0.5rem auto;
     border: none;
