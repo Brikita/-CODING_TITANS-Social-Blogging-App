@@ -9,8 +9,8 @@
 </head>
 <body>
     <header>
-        <h1>Your Profile</h1>
-        <nav>
+        <h1 id="user-name">Your Profile</h1>
+        <nav aria-label="page-navigation" id="page-nav">
             <a href="">Home</a>
             <a href="">Search</a>
             <a href="">DM</a>
@@ -18,13 +18,22 @@
     </header>
     
     <main>
-        
-            <h2 id="username">Name</h2>
+        <div class="identification">
+            <h2 id=""></h2>
+            
             <p id="profilePhoto">photo</p>
+        
+
+            <nav aria-label="blogs-and-friends" id="blogs-friends">
+                <a href="#Blogs">Blogs</a>
+                <a href="friends.html">Friends</a>
+                <a href=""></a>
+            </nav>
+        </div>
 
         <div>
-            <button id="editProfile">Edit Profile</button>
-            <button id="shareProfile">Share Profile</button>
+            <button id="editProfile"><a href="edit.html">Edit Profile</a></button>
+            <button id="shareProfile"><a href="">Share Profile</a></button>
         </div>
 
             <p id="myBio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas minus nulla aspernatur veritatis odio. Ipsam earum pariatur, error commodi corporis quis labore, recusandae, sapiente possimus deserunt culpa consectetur voluptates doloribus.</p>
@@ -32,12 +41,17 @@
 
         <hr>
 
-        <p>posts/blogs</p>
+        <section id="Blogs">
+            <p>posts/blogs</p>
+        </section>
+        
         
     </main>
 
     <footer>
 
     </footer>
+
+    <script src="profile.js"></script>
 </body>
 </html>
