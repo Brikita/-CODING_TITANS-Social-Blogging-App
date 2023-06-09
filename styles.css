@@ -59,6 +59,11 @@ figure{
     display: block;
     width: 70%;
 }
+img {
+    object-fit: cover;
+    width: 100%;
+    height:150;
+}
 .nav-button {
     margin-right: 15px;
     background-color: white;
