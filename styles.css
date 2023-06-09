@@ -1,0 +1,224 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: white;
+    border-bottom: 2px solid #19a7ce;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+   /* display: flex;
+    align-items:center ;
+    justify-content: space-between;*/
+}
+nav ul {
+    list-style-type: none;
+    display:flex;
+}
+
+nav ul li {
+flex: 0.2;
+ align-items: center;
+}
+
+.container {
+    margin: 50px;
+    /*border: 2px solid #45a29e;*/
+    display: flex;
+}
+
+.blog-content{
+border: 2px solid #19a7ce;
+border-radius: 10px;
+
+}
+
+a:any-link {
+color: /*#1f2833*/ white;
+text-decoration: none;
+}
+
+a:hover {
+opacity: 90%;
+}
+
+#search-input {
+    padding: 0.5rem;
+    border-radius: 35px ;
+}
+#search-icon {
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+    font-weight: bolder;
+    font-size: medium;
+    cursor: pointer;
+
+}
+
+/*Article heading*/
+.art-head{
+    padding-left: 10px;
+}
+
+.blog-text{
+    padding: 10px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    max-width: 40em;
+}
+
+
+figure{
+    display: block;
+    width: 70%;
+}
+img {
+    object-fit: cover;
+    width: 100%;
+    height:150;
+}
+.nav-button {
+    margin-right: 15px;
+    background-color: #19a7ce;
+    padding: 8px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #19a7ce;
+}
+.tag {
+    background-color: rgb(223, 223, 223);
+  border-radius: 35px;
+  padding: 3px;
+}
+
+footer{
+    font-weight: bolder;
+    text-align: center;
+}
+.footer-legal {
+    font-weight: 100;
+    text-align: right; 
+}
+
+ul {
+    list-style-type: none;
+}
+#like-button {
+    font-weight: bold;
+    padding: 3px;
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+#like-count {
+    font-weight: bold;
+}
+
+.comment-button{
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+    border:none;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media screen and (min-width: 576px) {
+    
+        header{
+            background-color: whitesmoke;
+            border-bottom: 2px solid #45a29e;
+            border-radius: 20px;
+            padding-top: 20px;
+            padding-left: 20px;
+            display: flex;
+            align-items:center ;
+            justify-content: space-evenly;
+            gap: 8px;
+    }
+    
+}
+.reaction {
+    background-color: white;
+    padding:4px;
+    color:grey;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    border:none;
+   
+    
+
+}
+.reaction h2, h3 {
+    color: #333;
+    text-decoration: underline;
+}
+
+.reaction input {
+    padding: 0.5rem 1rem;
+    font-size: inherit;
+    background-color:white;
+    margin: 0.5em;
+    border: 1px solid white ;
+    border-radius: 20px;
+    text-decoration: underline;
+}
+
+.reaction-containers {
+    padding: 1rem;
+    padding-bottom:10px;
+    border: none;
+    margin: 1rem;
+
+}
+
+
+
+#like-button, .comment-button {
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 0.5rem 0.75rem;
+    margin: 0.5em;
+    border-radius: 10px;
+   
+}
+#like-count {
+    font-weight: bold;
+    color: black;
+}
+
+.likes {
+    max-height: 50%;
+}
+
+@media screen and (min-width: 576px) {
+    
+        header{
+            background-color: #19a7ce;
+            border-bottom: 2px solid #19a7ce;
+            border-radius: 20px;
+            padding-top: 20px;
+            padding-left: 20px;
+            display: flex;
+            align-items:center ;
+            justify-content: space-evenly;
+            gap: 8px;
+    }
+    
+.nav-button {
+    background-color: white;
+    border: 2px solid white;
+}
+a:any-link {
+    color: #19a7ce;
+}
+    
+}
+
