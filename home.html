@@ -8,8 +8,10 @@
     <meta name="description" content="A social blogging app">
     <title>Blog Home page</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
+    <script src="/homepage.js"></script>
     <header>
        <!--blog app name--> <h1>S BLOG APP</h1>
        <div class="searchbar">
@@ -43,7 +45,7 @@
         <section class="reaction">
             <div class="likes">
                 <h3>Likes</h3>
-                <button id="like-button">Like</button>
+                <button onclick="addLikes()" id="like-button">Like</button>
                 <span id="like-count">0</span>
 
             </div>
@@ -52,8 +54,7 @@
                 <h2>Comments</h2>
                 <form id="comment-form">
                     <input type="text" name="comment-input" id="comment-input" placeholder="Add a comment">
-                    <button class="comment-button" type="su
-                    ">comment</button>
+                    <button class="comment-button" type="submit">comment</button>
                 </form>
 
                 <ul id="comment-list"  >

@@ -5,8 +5,8 @@ body{
 }
 
 header{
-    background-color: whitesmoke;
-    border-bottom: 2px solid #45a29e;
+    background-color: #19a7ce;
+    border-bottom: 2px solid #19a7ce;
     border-radius: 20px;
     padding-top: 20px;
     padding-left: 20px;
@@ -31,13 +31,13 @@ flex: 0.2;
 }
 
 .blog-content{
-border: 2px solid #45a29e;
+border: 2px solid #19a7ce;
 border-radius: 10px;
 
 }
 
 a:any-link {
-color: #1f2833;
+color: /*#1f2833*/ #19a7ce;
 text-decoration: none;
 }
 
@@ -61,11 +61,12 @@ figure{
 }
 .nav-button {
     margin-right: 15px;
-    background-color: #378581;
+    background-color: white;
     padding: 8px;
     border-radius: 25px;
     font-weight: bold;
     cursor: pointer;
+    border-color:  #19a7ce;
 }
 
 footer{
@@ -92,6 +93,7 @@ ul {
     border-radius: 20px;
     padding: 5px;
     cursor: pointer;
+    border:none;
 }
 
 h2 {
@@ -101,8 +103,8 @@ h2 {
 @media screen and (min-width: 576px) {
     
         header{
-            background-color: whitesmoke;
-            border-bottom: 2px solid #45a29e;
+            background-color: #19a7ce;
+            border-bottom: 2px solid #19a7ce;
             border-radius: 20px;
             padding-top: 20px;
             padding-left: 20px;
