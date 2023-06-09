@@ -21,10 +21,16 @@ logIn.addEventListener("click", function() {
         eMail.value = ""
         passWord.value = ""
         errorMessage.textContent = ""
-    } else {
+    } 
+    else if (logIn.email == null || passWord.email == null) {
+        eMail.value = ""
+        passWord.value = ""
         errorMessage.textContent = "Wrong email or password. Please sign up."
     }
-})()
+    else {
+        errorMessage.textContent = "Wrong email or password. Please sign up."
+    }
+})
 
 
 function openSignup(){
