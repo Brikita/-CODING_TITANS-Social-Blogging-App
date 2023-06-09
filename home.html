@@ -16,11 +16,18 @@
     <header>
        <!--blog app name--> <h1>S BLOG APP</h1>
        <div class="searchbar">
+        <form action="" class="search-form">
         <button class="btn place-items-center" id="search-icon">
             <i class="ri-search-line"></i>
         </button> 
-        <input type="text" name="search-input" id="search-input" placeholder="search blog">
-       </div>
+        <input type="text" name="search-input" id="search-input" placeholder="Search for a blog">
+    </form>
+    <!--
+     <button class="close-form" id="form-close-btn">
+        <i class="ri-close-line"></i>
+     </button>
+    -->
+    </div>
         <nav>
             <ul>
                <button class="nav-button" > <li><a href="#">My Profile</a></li> </button>
@@ -37,7 +44,13 @@
                     <div class="art-head"><h2>Article Heading </h2></div>
                 
                     <img src="/Assets/Book-aesthetic-164423-pixahive.webp" alt="Article photo" height="350">
-               <p class="blog-text">
+                 <span class="tag">#Books</span>
+                   <div class="data-container">
+                    <span>June 8th 2023</span>
+                    
+                    <span> 3-min-read</span>
+                   </div> 
+                 <p class="blog-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae repellendus natus at similique. Quidem ea, mollitia porro delectus iusto quasi facere illum sunt quisquam dignissimos odit ipsam officia nobis.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit expedita perspiciatis iure facilis eaque consectetur sed reiciendis explicabo eos architecto maxime laborum optio molestiae velit, rem doloribus id inventore tempora.
               </p>
@@ -47,7 +60,7 @@
             <div class="likes">
                 <h3>Likes</h3>
                 <button onclick="addLikes()" id="like-button">Like</button>
-                <span id="like-count">0</span>
+                <p id="like-count">0</p>
 
             </div>
 
@@ -55,14 +68,15 @@
                 <h2>Comments</h2>
                 <form id="comment-form">
                     <input type="text" name="comment-input" id="comment-input" placeholder="Add a comment">
-                    <button class="comment-button" type="submit">comment</button>
+                    <button class="comment-button" id="comment-btn">comment</button>
                 </form>
 
                 <ul id="comment-list"  >
-                    <li>Nice. really inspiring</li>
-                    <li>comment2</li>
-                    <li>comment3</li>
-                    <li>comment4</li>
+                    <li>Nice read</li>
+                    <li>comment 2</li>
+                    <li>Amazing work</li>
+                    <li></li>
+                   
                 </ul>
             </div>
            

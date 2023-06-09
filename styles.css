@@ -5,7 +5,7 @@ body{
 }
 
 header{
-    background-color: #19a7ce;
+    background-color: white;
     border-bottom: 2px solid #19a7ce;
     border-radius: 20px;
     padding-top: 20px;
@@ -37,13 +37,28 @@ border-radius: 10px;
 }
 
 a:any-link {
-color: /*#1f2833*/ #19a7ce;
+color: /*#1f2833*/ white;
 text-decoration: none;
 }
 
 a:hover {
 opacity: 90%;
 }
+
+#search-input {
+    padding: 0.5rem;
+    border-radius: 35px ;
+}
+#search-icon {
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+    font-weight: bolder;
+    font-size: medium;
+    cursor: pointer;
+
+}
+
 /*Article heading*/
 .art-head{
     padding-left: 10px;
@@ -55,6 +70,8 @@ opacity: 90%;
     word-wrap: break-word;
     max-width: 40em;
 }
+
+
 figure{
     display: block;
     width: 70%;
@@ -66,12 +83,12 @@ img {
 }
 .nav-button {
     margin-right: 15px;
-    background-color: white;
+    background-color: #19a7ce;
     padding: 8px;
     border-radius: 25px;
     font-weight: bold;
     cursor: pointer;
-    border-color:  #19a7ce;
+    border: 2px solid #19a7ce;
 }
 
 footer{
@@ -118,5 +135,13 @@ h2 {
             justify-content: space-evenly;
             gap: 8px;
     }
+    
+.nav-button {
+    background-color: white;
+    border: 2px solid white;
+}
+a:any-link {
+    color: #19a7ce;
+}
     
 }
