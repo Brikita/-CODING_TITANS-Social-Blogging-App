@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="CODING TITANS">
+    <meta name="description" content="A social blogging app">
+    <title>Blog Home page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+       <!--blog app name--> <h1>S BLOG APP</h1>
+       <div class="searchbar">
+        <button id="search-button">search</button> <!--This is the search button . im gonna try and change the search button to a micr-->
+        <input type="text" name="search-input" id="search-input" placeholder="search blog">
+       </div>
+        <nav>
+            <ul>
+               <button class="nav-button" > <li><a href="#">My Profile</a></li> </button>
+               <button class="nav-button"><li><a href="#">Direct Message</a></li></button>
+               <button class="nav-button"> <li><a href="#">log out</a></li></button>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <div class="blog">
+                <section aria-label="article-area" class="blog-content">
+                <div class="blog pic">
+                    <div class="art-head"><h2>Article Heading </h2></div>
+                <figure>
+                    <img src="/-CODING_TITANS-Social-Blogging-App/Assets/download.jpeg" alt="Article photo">
+                </figure>
+                
+              <p class="blog-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae repellendus natus at similique. Quidem ea, mollitia porro delectus iusto quasi facere illum sunt quisquam dignissimos odit ipsam officia nobis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit expedita perspiciatis iure facilis eaque consectetur sed reiciendis explicabo eos architecto maxime laborum optio molestiae velit, rem doloribus id inventore tempora.
+              </p>
+            </div>
+        </section>
+        <section class="reaction">
+            <div class="likes">
+                <h3>Likes</h3>
+                <button id="like-button">Like</button>
+                <span id="like-count">0</span>
+
+            </div>
+
+            <div class="commenting">
+                <h2>Comments</h2>
+                <form id="comment-form">
+                    <input type="text" name="comment-input" id="comment-input" placeholder="Add a comment">
+                    <button class="comment-button" type="su
+                    ">comment</button>
+                </form>
+
+                <ul id="comment-list"  >
+                    <li>Nice. really inspiring</li>
+                    <li>comment2</li>
+                    <li>comment3</li>
+                    <li>comment4</li>
+                </ul>
+            </div>
+           
+
+        </section>
+
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <div>
+        <span>Social Blogging App</span>
+    </div> 
+    <div class="footer-legal">Copyright &copy; 2023</p> </div> 
+
+    </footer>
+</body>
+</html>
