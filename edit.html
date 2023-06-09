@@ -18,11 +18,11 @@
     
 
     <main>
-        <form action="">
+        <form action="" >
             <div>
-                <label for="name">Name:</label>
+                <label for="first-name">Name:</label>
                     <p id="unlabelled"></p>
-                <input type="text" id="name" placeholder="your name" required autofocus>
+                <input type="text" id="first-name" placeholder="your name" required autofocus autocomplete="name">
                 <label for="username">Username:</label>
                 <input type="text" id="user-name" placeholder="your name" required>
                 <label for="username">Bio:</label>
@@ -40,9 +40,9 @@
 
         </form>
 
-        <button type="submit" id="save-edit">SAVE</button>
+        <button type="submit" id="save-edit" onclick="saveDetails()">SAVE</button>
     </main>
 
-    <script src="edit.js"></script>
+    <script src="edit.js" defer></script>
 </body>
 </html>

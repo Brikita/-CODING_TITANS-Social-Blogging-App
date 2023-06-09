@@ -1,13 +1,16 @@
-// username on profile page ****
-const appUsername = document.getElementById("user-name")
-appUsername.textContent = userName.value
+// fetching the profile.html
+fetch("edit.html")
+.then(response => response.text())
+.then(html => {
+    const tempElement = document.createElement("input")
+    tempElement.innerHTML = html
+
+    const id = tempElement.querySelector("#first-name").id
+
+    console.log("ID", id)
+})
 
 // name and profile pic
-const savedName = document.getElementById("saved-name")
-const yourName = document.getElementById("your-name")
-let profilePhoto = document.getElementById("profile-photo")
-
-function changeProfilePic() {
-    profilePhoto.src = ""
-}
+const appName = document.getElementById("app-name")
+appName.textContent = firstName.value
 

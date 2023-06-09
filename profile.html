@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1 id="app-username">Your Profile</h1>
+        <h1 id="app-username">Profile Page</h1>
         <nav aria-label="page-navigation" id="page-nav">
             <a href="">Home</a>
             <a href="">Search</a>
@@ -19,7 +19,7 @@
     
     <main>
         <div class="identification">
-            <h2 id="appName"></h2>
+            <h2 id="app-name">Name</h2>
             
             
             <figure id="container">
@@ -39,23 +39,27 @@
             <button id="editProfile"><a href="edit.html">Edit Profile</a></button>
             <button id="shareProfile"><a href="">Share Profile</a></button>
         </div>
-
-            <p id="myBio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas minus nulla aspernatur veritatis odio. Ipsam earum pariatur, error commodi corporis quis labore, recusandae, sapiente possimus deserunt culpa consectetur voluptates doloribus.</p>
+            <h2>Bio</h2>
+            <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Type your bio here"></textarea>
         
 
         <hr>
 
         <section id="Blogs">
-            <p>posts/blogs</p>
+            <h2 class="posts">Posts</h2>
+            <img id="posts-images" src="football.jpg" alt="Your posts and videos">
+            <button id="add-post"></button>
         </section>
         
         
     </main>
 
-    <footer>
+    <hr>
 
+    <footer>
+        <p>&copy;</p>
     </footer>
 
-    <script src="profile.js"></script>
+    <script src="profile.js" defer></script>
 </body>
 </html>

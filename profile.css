@@ -5,13 +5,14 @@
 }
 
 html {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: auto;
 }
 
 body {
-    background: linear-gradient(rgb(15, 36, 94), rgb(218, 210, 210));
+    background: rgb(15, 36, 94);
     color: aliceblue;
+    
 }
 
 header {
@@ -94,6 +95,30 @@ button:hover {
     background: rgb(87, 105, 122);
 }
 
+#bio {
+    background-color: rgb(15, 36, 94);
+    color: aliceblue;
+    border: none;
+}
+
+.posts {    
+    color: deepskyblue;
+    font-size: 2rem;
+    font-style: normal;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-align: center;
+}
+
+#posts-images {
+    border: 1px solid black;
+    width: 300px;
+}
+
+footer {
+    font-size: 1.3rem;
+}
+
 @media screen and (max-width: 576px) {
     html {
         max-width: 576px;
@@ -106,11 +131,6 @@ button:hover {
 }
 
 @media screen and (min-width: 768px) {
-    body {
-        
-       
-    }
-
     header {
         text-align: center;
     }
