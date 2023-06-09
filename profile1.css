@@ -1,0 +1,158 @@
+* {
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100vw;
+    height: auto;
+}
+
+body {
+    background: rgb(15, 36, 94);
+    color: aliceblue;
+    
+}
+
+header {
+    border-bottom: 3px solid black;
+    padding-top: 0;
+    padding-bottom: 5px;
+    background: orange;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+#page-nav {
+    text-align: center;
+}
+
+h2 {
+    font-style: oblique;
+    margin-right: 3rem;
+}
+
+.identification {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+
+
+#blogs-friends {
+    display: inline-flex;
+    justify-content: right;
+    margin-top: 5px;
+    width: 100%;
+    margin-left: 3px;
+}
+
+#picture-btn {
+    width: 100px;
+}
+
+#profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#app-name {
+    background: rgb(15, 36, 94);
+    border: none;
+    color: aliceblue;
+    font-size: 1.5rem;
+    height: 25px;
+}
+
+main a {
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+a {
+    color: blue;
+    margin-left: 2rem;
+}
+
+a:hover {
+    opacity: 80%;
+}
+
+button {
+    border: 2px solid #39a79f;
+    border-radius: 3px;
+    background: rgb(29, 27, 27);
+    color: aliceblue;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    width: 200px;
+    height: auto;
+}
+
+button a {
+    font-size: 1rem;
+    color: aliceblue;
+}
+
+button:hover {
+    background: rgb(87, 105, 122);
+}
+
+#bio {
+    background-color: rgb(15, 36, 94);
+    color: aliceblue;
+    border: none;
+}
+
+.posts {    
+    color: deepskyblue;
+    font-size: 2rem;
+    font-style: normal;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-align: center;
+}
+
+#posts-images {
+    border: 1px solid black;
+    width: 300px;
+}
+
+footer {
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 576px) {
+    html {
+        max-width: 576px;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+    }
+
+    button {
+        width: 150px;
+        height: auto;
+        box-shadow: 2px 2px rgb(70, 67, 67);
+        margin-left: 7px;
+    }
+}
