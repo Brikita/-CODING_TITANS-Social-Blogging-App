@@ -129,8 +129,21 @@ ul {
 h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-h3 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+@media screen and (min-width: 576px) {
+    
+        header{
+            background-color: whitesmoke;
+            border-bottom: 2px solid #45a29e;
+            border-radius: 20px;
+            padding-top: 20px;
+            padding-left: 20px;
+            display: flex;
+            align-items:center ;
+            justify-content: space-evenly;
+            gap: 8px;
+    }
+    
 }
 .reaction {
     background-color: white;
