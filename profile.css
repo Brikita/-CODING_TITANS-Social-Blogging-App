@@ -61,6 +61,14 @@ h2 {
     border-radius: 50%;
 }
 
+#app-name {
+    background: rgb(15, 36, 94);
+    border: none;
+    color: aliceblue;
+    font-size: 1.5rem;
+    height: 25px;
+}
+
 main a {
     text-decoration: none;
     font-size: 1.3rem;

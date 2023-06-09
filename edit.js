@@ -1,5 +1,5 @@
 // fetching the profile.html
-fetch("profile.html")
+/* fetch("profile.html")
 .then(response => response.text())
 .then(html => {
     const parser = new DOMParser();
@@ -14,26 +14,22 @@ fetch("profile.html")
 
 .catch(error => {
     console.error("Error fetching profile.html:", error)
-});
+}); */
 
 // editing profile
 const unLabelled = document.getElementById("unlabelled")
 const saveEditBtn = document.getElementById("save-edit")
+saveEditBtn.addEventListener("click", function() {
 
-
-
-document.addEventListener("DOMContentLoaded", function saveDetails()  {
-    let firstName = document.getElementById ("first-name")
-    let appName = document.getElementById("app-name")
-    let inputName = firstName.value
-    if (inputName === "") {
-        
+    if (name.value = undefined) {
         unLabelled.textContent = "You have to fill this out"
         window.open("")
-        
-    } else {        
-        appName.textContent = inputName
+    } else {
         window.open("profile.html")
-        console.log(inputName)
+    appName.textContent = name.value
     }
-}
+})
+
+/* document.addEventListener("DOMContentLoaded", function() {
+    saveEditBtn.addEventListener("click", saveDetails);
+}) */
