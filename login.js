@@ -1,9 +1,7 @@
-const userName = document.getElementById("name")
-const logIn = document.getElementById("login")
+const logIN = document.getElementById("login")
 const eMail = document.getElementById("email")
 const passWord = document.getElementById("password")
 const errorMessage = document.getElementById("error-message")
-const signUp = document.getElementById("sign-up")
 
 function openIndex() {
     let loginDetails ={
@@ -14,21 +12,33 @@ function openIndex() {
     window.open("index.html")   
 }
 
-logIn.addEventListener("click", function() {
+logIN.addEventListener("click", function() {
     const logIn = JSON.parse(localStorage.getItem("logindetails"))
-    if (eMail.value === logIn.email && passWord.value === logIn.password) {
+    if (logIn == null) {
+        eMail.value = ""
+        passWord.value = ""
+        errorMessage.textContent = "Invalid email address! Please sign up"
+    }
+
+    else if (eMail.value == "") {
+        errorMessage.textContent = "Please enter your email address"
+    }
+
+    else if (passWord.value == "") {
+        errorMessage.textContent = "Please enter your password"
+    }
+
+    else if (eMail.value === logIn.email && passWord.value === logIn.password) {
         window.open("home.html")
         eMail.value = ""
         passWord.value = ""
         errorMessage.textContent = ""
     } 
-    else if (logIn.email == null || passWord.email == null) {
+
+    else {
         eMail.value = ""
         passWord.value = ""
-        errorMessage.textContent = "Wrong email or password. Please sign up."
-    }
-    else {
-        errorMessage.textContent = "Wrong email or password. Please sign up."
+        errorMessage.textContent = "Wrong email or password. Please try again."
     }
 })
 
