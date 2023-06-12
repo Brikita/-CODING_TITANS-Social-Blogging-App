@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Brian Kinyua">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <link rel="stylesheet" href="messagestyle.css">
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#new-message">New Message</a></li>
+                    <li><a href="profile1.html">Profile</a></li>
+                    <li><a href="friends.html">Friends</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+        <section class="search">
+            <h2>Search</h2>
+            <div>
+                <label for="search" >
+                    <input class="searchbar" type="text" name="search" id="search" placeholder="Search from Messages or for Friends">
+                </label>
+            </div>
+            <p id="search-msg"></p>
+            <div> <button class="search-btn" id="search-btn">Search</button></div>
+        </section>
+
+    </header>
+    <br><br>
+    <hr>
+    <br>
+
+    <main>
+        <h2 id="unread-meassages"></h2>
+        <div class="unread">
+            
+            <div class="user"><p>User 1</p></div>
+            <div id="unread-1" class="unread_messages">
+                <p>message ________</p>
+
+            </div>
+            <div class="user"><p>User 2</p></div>
+            <div class="unread_messages">
+                <p>message ________</p>
+
+            </div>
+            <div class="user"><p>User 3</p></div>
+            <div class="unread_messages">
+                <p>message     ________</p>
+
+            </div>
+            <div class="user"><p>User 4</p></div>
+            <div class="unread_messages">
+                <p>message ________</p>
+            </div>
+        </div>
+        <br>
+
+        
+        <section class="messages">
+            <h2>New Message</h2>
+            <div class="new message" id="new-message">
+
+                <form action="">
+                    <div >
+                        <label for="recipient"> To:
+                            <input class="recipient" type="text" name="recipient" id="recipient" placeholder="recipient">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="message"> Message:
+                            <input type="text" name="message" id="message" placeholder="Message">
+                        </label>
+                    </div>
+                    <button type="submit">send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><a href="#">Top</a></p>
+        <p> &copy; 2023    All Rights Reserved.  </p>
+
+    </footer>
+    <script src="messages.js" defer></script>
+</body>
+</html>

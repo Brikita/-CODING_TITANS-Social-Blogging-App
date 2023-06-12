@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Ubuntu:wght@300&display=swap');
+
+* {
+   padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+html {
+   
+   font-family: 'Ubuntu', sans-serif;
+   scroll-behavior: smooth;
+   background-color: steelblue;
+
+
+
+}
+
+body {
+    padding: 3rem;
+    margin: 5px;
+    min-width: calc(100vw -50px);
+    min-height: 100vh;
+    text-align: center;
+    font-size: larger;
+    letter-spacing: 0.15em;
+    border: 3px solid steelblue;
+    border-radius: 50px;
+    background-image: linear-gradient(skyblue, steelblue);
+    
+    
+}
+
+ header nav ul {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    margin: 1rem;
+    justify-content: center;
+    gap: 10vw;
+    background-color: #333;
+    padding: 1rem;
+    list-style: none;
+    border-radius: 50px;
+
+
+    
+ }
+
+ 
+
+input {
+    padding: 0.5rem 2rem;
+    font-size: inherit;
+    border: 2px solid #333;
+    border-radius: 20px ;
+    margin: 1rem;
+
+ }
+
+ a:any-link {
+    color: aqua;
+ }
+
+ a:hover, a:focus {
+   opacity: 0.5;
+ }
+
+ button {
+   font-family: inherit;
+   font-weight: 1000;
+   letter-spacing: inherit;
+
+ }
+
+
+ .search {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .searchbar {
+    width: 80%;
+    margin: 0.5rem auto;
+ }
+.messages {
+    
+    border: 1px solid steelblue;
+    background-color: steelblue;
+    width: 50%;
+    margin: 10px auto;
+    border-radius: 20px;
+    color: purple;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-size: 1.25rem;
+    padding: 1em;
+    
+    
+}
+
+ .newmessage {
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 1rem;
+    align-items: center;
+    
+ }
+
+ 
+
+
+ .messages button {
+    width: 100px;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: bold;
+    color: #303030;
+    background-color: rgb(165, 159, 153);
+    padding: 0.5rem;
+    border: 2px solid greenyellow;
+    border-radius: 30px;
+    align-content: center;
+ }
+
+ 
+
+ .unread {
+    width: 80%;
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    
+    gap: 1rem;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    background-color: blanchedalmond;
+    border-radius: 20px;
+    
+    color: #333;
+ }
+
+ .unread_messages {
+    padding: 1rem 3rem;
+    margin: 0.5rem;
+    display: flex;
+    border: #333;
+    background-color: black;
+    color: blanchedalmond;
+    border-radius: 20px;
+    box-shadow: 4px 4px 5px black;
+ }
+
+ .user {
+   background-color: violet;
+   width: 10vw;
+   height: 10vw;
+   padding: 0.75rem;
+   margin: 0.5rem;
+   border: 4px solid black;
+   border-radius: 50%;
+   font-family: 'nunito';
+   color: black;
+   font-weight: bolder;
+
+
+ }
+
+
+
+ .search-btn {
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    font-size: inherit;
+    font-family: inherit;
+    border-radius: 30px;
+ }
+
+ h2, h3 {
+   font-size: 3rem;
+ }
+
+
+
+
+
+ @media screen and (max-width : 578px) {
+   html {
+      display: flex;
+      flex-flow: column nowrap;
+      font-size: small;
+
+   }
+   body {
+      width:calc(100vw - 10px)  ;
+      margin: 10px auto;
+   }
+   h2,h3 {
+      font-size: 1rem;
+   }
+   * {
+      font-size: small;
+      max-width: 100%;
+   }
+   input {
+      max-width: 80%;
+   }
+   .unread_messages {
+      max-width: 80%;
+   }
+   .user {
+      font-size: 0.15rem;
+   }
+   
+ }
+
+
+ @media screen and (max-width: 768px) {
+   input {
+      max-width: 80%;
+   }
+   
+ }
+ @media screen and (max-width: 820px) {
+   input {
+      max-width: 80%;
+   }
+   
+ }

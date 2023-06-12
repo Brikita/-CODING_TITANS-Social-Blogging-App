@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="profile1.css">
+</head>
+<body>
+    <header>
+        <h1 id="app-username">Profile Page</h1>
+        <nav aria-label="page-navigation" id="page-nav">
+            <a href="home.html">Home</a>
+            <!-- <a href="">Search</a> -->
+            <a href="messages.html">DM</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="identification">
+            <input id="app-name" placeholder="Type your name" autofocus>
+            
+            
+            <figure id="container">
+                <img id="profile-photo" src="scenic-2200x1331.png" alt="Your profile picture">
+                <figcaption><button id="picture-btn" onclick="changeProfilePic()">Set Profile Pic</button></figcaption>
+            </figure>
+            
+
+            <nav aria-label="blogs-and-friends" id="blogs-friends">
+                <a href="#Blogs">Blogs</a>
+                <a href="friends.html">Friends</a>
+                <a href=""></a>
+            </nav>
+        </div>
+
+        <div>
+            <button id="editProfile"><a href="edit1.html">Edit Profile</a></button>
+            <button id="shareProfile"><a href="">Share Profile</a></button>
+        </div>
+            <h2>Bio</h2>
+            <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Type your bio here"></textarea>
+        
+
+        <hr>
+
+        <section id="Blogs">
+            <h2 class="posts">Posts</h2>
+            <img id="posts-images" src="football.jpg" alt="Your posts and videos">
+            <button id="add-post"></button>
+        </section>
+        
+        
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy;</p>
+    </footer>
+
+    <script src="profile.js" defer></script>
+</body>
+</html>

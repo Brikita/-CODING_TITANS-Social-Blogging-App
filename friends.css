@@ -1,0 +1,11 @@
+body {
+    background-color: skyblue;
+}
+h1 {
+    color: blueviolet;
+    text-align: center;
+}
+li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}

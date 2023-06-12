@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="edit1.css">
+</head>
+<body>
+    <header>
+        <h1>Edit Profile</h1>
+        <nav>
+            <a href="profile1.html">Back to profile</a>
+        </nav>
+    </header>
+
+    
+
+    <main>
+        <form action="" >
+            <div>
+                <label for="first-name">Name:</label>
+                    <p id="unlabelled"></p>
+                <input type="text" id="first-name" placeholder="your name" required autofocus autocomplete="name">
+                <label for="username">Username:</label>
+                <input type="text" id="user-name" placeholder="your name" required>
+                <label for="username">Bio:</label>
+                <textarea name="bio" id="userBio" cols="30" rows="10" placeholder="type here" required></textarea>
+                <label for="username">Gender:</label>
+                <input type="text" name="sex" id="gender" list="gender-list">
+                    <datalist id="gender-list">
+                        <option value="male">
+                        <option value="Female">
+                        <option value="Other">
+                    </datalist>
+                                       
+                </select>
+            </div>
+
+        </form>
+
+        <button type="submit" id="save-edit" onclick="saveDetails()">SAVE</button>
+    </main>
+
+    <script src="edit1.js" defer></script>
+</body>
+</html>
