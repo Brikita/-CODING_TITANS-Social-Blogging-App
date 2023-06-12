@@ -4,8 +4,8 @@ const searchMsg = document.getElementById("search-msg")
 const searchBtn = document.getElementById("search-btn")
 const returnMsg = document.getElementById("unread-1")
 let msg = {}
-localStorage.setItem(
-    msg1 , "contact1"
+let localMsg = localStorage.setItem(
+    "msg1", JSON.stringify(msg)
      
 )
 
@@ -23,6 +23,8 @@ searchBtn.addEventListener("click", function() {
    for (let i = 0; i < msg.length; i++){
     if (search.value == msg[i]){
         returnMsg.textContent = msg[i] 
+    }else {
+        returnMsg.textContent = "User not Found"
     }
    }
 }
