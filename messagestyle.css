@@ -78,7 +78,7 @@ input {
  }
 
 
- #search {
+ .search {
     display: flex;
     flex-direction: column;
  }
