@@ -1,4 +1,4 @@
-const likeButton = document.getElementById("like-button")
+/*const likeButton = document.getElementById("like-button")
 const commentButton = document.getElementById("comment-btn")
 const commentInput = document.getElementById("comment-input")
 
@@ -30,7 +30,7 @@ event.preventDefault();
 let comment = commentInput.value;
 }
 )*/
-let comments = []
+/*let comments = []
 
 commentButton.addEventListener("click", function(){
     comments.push(commentInput.value)
@@ -47,7 +47,45 @@ commentList.innerHTML = comm
  
 let li = document.createElement('li')
 li.textContent = comments[i]
-commentList.append(li)
+commentList.append(li)*/
+const likeButton = document.getElementById("like-button");
+const commentButton = document.getElementById("comment-btn");
+const commentInput = document.getElementById("comment-input");
+
+// Likes functionality
+let likes = 0;
+
+function addLikes() {
+  const likeCount = document.getElementById("like-count");
+  likes++;
+  likeCount.textContent = likes;
+}
+
+// Comment functionality
+const commentList = document.getElementById("comment-list");
+const comments = [];
+
+commentButton.addEventListener("click", function() {
+  comments.push(commentInput.value);
+  commentInput.value = "";
+  renderComments();
+});
+
+function renderComments() {
+  let comm = "";
+  for (let i = 0; i < comments.length; i++) {
+    comm += "<li>" + comments[i] + "</li>";
+  }
+  commentList.innerHTML = comm;
+
+  // Create new li element for each comment and append it to commentList
+  for (let i = 0; i < comments.length; i++) {
+    let li = document.createElement('li');
+    li.textContent = comments[i];
+    commentList.appendChild(li);
+  }
+}
+
 
 
 
