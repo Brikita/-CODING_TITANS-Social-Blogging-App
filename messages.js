@@ -1,32 +1,55 @@
-const unreadMessages = document.getElementById("unread-messages")
-const search = document.getElementById("search")
-const searchMsg = document.getElementById("search-msg")
-const searchBtn = document.getElementById("search-btn")
-const returnMsg = document.getElementById("unread-1")
-let msg = {}
-let localMsg = localStorage.setItem(
-    "msg1", JSON.stringify(msg)
-     
-)
+// VARIABLES
+
+let messages = [   
+    {
+        userName: 'user1', 
+        message: "Hello, Will there be a meeting today"
+    } , 
+    {
+        userName: 'user2',
+        message: "Hello, I am Brian what about you?"
+    } , 
+    {
+        userName: 'user3',
+        message: "Are you coming today"
+    } , 
+    {
+        userName: 'user4',
+        message: "Is it today or tommorow"}
+]
 
 
+const users = document.querySelectorAll('.user');
+const messageDisplay = document.querySelectorAll('.unread-messages');
+const searchBtn = document.getElementById('search-btn');
+let searchBar = document.getElementById('search-bar');
+const searchResult = document.getElementById('search-msg');
 
 
-unreadMessages.textContent = "Unread Messages"
+//Displaying the users
 
 
-searchBtn.addEventListener("click", function() {
-    if (search === "" ) {
-        searchMsg.textContent = "Cannot Be empty"
-} else {
-   let searchitem = search.value
-   for (let i = 0; i < msg.length; i++){
-    if (search.value == msg[i]){
-        returnMsg.textContent = msg[i] 
-    }else {
-        returnMsg.textContent = "User not Found"
+for (let i = 0 ; i < users.length ; i++ ) {
+    users[ i ].textContent = messages[i].userName;    
+}
+
+// display the messages
+for (let i = 0 ; i < messageDisplay.length ; i++ ){
+    messageDisplay[i].textContent = messages[i].message;
+}
+
+//Search Bar
+searchBtn.addEventListener('click', function(){
+    const searchMsg = searchBar.value;
+    let result = []
+    for (let i = 0 ; i < messages.length ; i++){
+        if ( messages[i].userName === searchMsg ){
+            result = messages[i].userName+": " +messages[i].message;
+        }
+
     }
-   }
-}
-}
-)
+    searchResult.textContent = result;
+    console.log(result)
+    
+});
+
