@@ -1,5 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Ubuntu:wght@300&display=swap');
- */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Ubuntu:wght@300&display=swap');
+
 * {
    padding: 0;
     margin: 0;
@@ -83,10 +83,23 @@ input {
     flex-direction: column;
  }
 
- .searchbar {
+ .search-bar {
     width: 80%;
     margin: 0.5rem auto;
  }
+
+#search-msg {
+   background-color: bisque;
+   color: #333;
+   border-radius: 10px;
+}
+
+.hidden {
+   display: none;
+}
+
+
+
 .messages {
     
     border: 1px solid steelblue;
