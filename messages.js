@@ -22,7 +22,7 @@ const unreadMessages = document.getElementById('unread');
 //const users = document.querySelectorAll('.user');
 //const messageDisplay = document.querySelectorAll('.unread-messages');
 const searchBtn = document.getElementById('search-btn');
-let searchBar = document.getElementById('search-bar');
+const searchBar = document.getElementById('search-bar');
 const searchResult = document.getElementById('search-msg');
 
 // Creating elements based on the number of messages
